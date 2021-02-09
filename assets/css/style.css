@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Sonder;
+    src: url("../fonts/SonderSans-Black.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.masque {
+    position: absolute;
+    top: 16%;
+    left: 0; right: 0;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+    font-family: Sonder;
+    font-size: 40px;
+    color: white;
+    line-height: 70px;
+    width: 60vw;
+    display: none;
+}
+
+.masque > .countdown {
+    position: absolute;
+    bottom: 0;
+    height: 125px;
+    width: 100%;
+}
+
+.masque > .countdown > div {
+    position: relative;
+    display: inline-block;
+    line-height: 200px;
+    height: 125px;
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.masque > .countdown > div > .value {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    line-height: 75px;
+    font-size: 75px;
+}
+
+.masque > .countdown > .separate {
+    position: relative;
+    height: 54px;
+    width: 2px;
+    top: -37px;
+    background: white;
+}
+
+.masque > .countdown > .day {
+
+}
+
+.masque > .countdown > .heures {
+
+}
+
+.masque > .countdown > .minutes {
+
+}
+
+.masque > .countdown > .secondes {
+
+}
