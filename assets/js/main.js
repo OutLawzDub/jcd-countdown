@@ -14,11 +14,7 @@ function getTimeRemaining(endtime){
     };
 }
 
-// CONFIGURE DATE
-
-var date = "02/10/2021";
-
-$(document).ready(() => {
+function updateCountdown() {
     var timing = getTimeRemaining(date);
 
     $('.masque').fadeIn(1000);
@@ -31,4 +27,18 @@ $(document).ready(() => {
     $('.heures > .value').html(timing.hours);
     $('.minutes > .value').html(timing.minutes);
     $('.secondes > .value').html(timing.seconds);
+}
+
+// CONFIGURE DATE
+
+var date = "02/18/2021";
+
+$(document).ready(() => {
+    updateCountdown();
 });
+
+// Countdown
+
+setInterval(() => {
+    updateCountdown();
+}, 1000);
