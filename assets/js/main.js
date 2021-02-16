@@ -34,11 +34,27 @@ function updateCountdown() {
 var date = "02/18/2021";
 
 $(document).ready(() => {
-    updateCountdown();
+    var timing = getTimeRemaining(date);
+
+    $('.masque').fadeIn(1000);
+
+    setTimeout(function() {
+        $('.masque').fadeOut(500);
+    }, 2000);
+
+    $('.day > .value').html(timing.days);
+    $('.heures > .value').html(timing.hours);
+    $('.minutes > .value').html(timing.minutes);
+    $('.secondes > .value').html(timing.seconds);
 });
 
 // Countdown
 
 setInterval(() => {
-    updateCountdown();
+    var timing = getTimeRemaining(date);
+
+    $('.day > .value').html(timing.days);
+    $('.heures > .value').html(timing.hours);
+    $('.minutes > .value').html(timing.minutes);
+    $('.secondes > .value').html(timing.seconds);
 }, 1000);
